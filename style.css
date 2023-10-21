@@ -33,6 +33,10 @@ small {
   font-size: 12px;
 }
 
+a {
+  text-decoration: none;
+}
+
 .weather-app-wrapper {
   max-width: 600px;
   margin: 30px auto;
