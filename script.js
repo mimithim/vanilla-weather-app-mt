@@ -110,6 +110,24 @@ function handleSubmit(event) {
   let cityInputElement = document.querySelector("#city-input");
   search(cityInputElement.value);
 }
+function displayFahrenheitTemperature(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#temperature");
+
+  celsiusLink.classList.remove("active");
+  fahrenheitLink.classList.add("active");
+  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
+  temperatureElement.InnerHTML = Math.round(fahrenheitTemperature);
+}
+function displayCelsiusTemperature(event) {
+  event.preventDefault();
+
+  celsiusLink.classList.add("active");
+  fahrenheitLink.classList.remove("active");
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.InnerHTML = Math.round(celsiusTemperature);
+}
+
 function searchLocation(position) {
   let apiKey = "50c2acd53349fabd54f52b93c8650d37";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
@@ -124,7 +142,16 @@ function getCurrentLocation(event) {
 
 let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
-let form = document.querySelector("#search-form");
 
+let celsiusTemperature = null;
+
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
+
+let celsiusLink = document.querySelector("#celsius-link");
+celsiusLink.addEventListener("click", displayCelsiusTemperature);
+
+let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
+
 search("Stockholm");

@@ -29,11 +29,6 @@ li:first-letter {
   text-transform: capitalize;
 }
 
-a {
-  color: #000;
-  text-decoration: none;
-  background-color: transparent;
-}
 small {
   font-size: 12px;
 }
