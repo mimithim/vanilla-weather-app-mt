@@ -35,6 +35,7 @@ small {
 
 a {
   text-decoration: none;
+  color: #48484a;
 }
 
 .weather-app-wrapper {
@@ -75,7 +76,7 @@ a {
   position: relative;
   font-size: 10px;
   top: 0;
-  margin-left: -1px;
+  margin-left: 1px;
 }
 
 .weather-temperature .active {
@@ -104,4 +105,22 @@ a {
 
 .weather-forecast-temperatures {
   font-size: 13px;
+}
+.fa-location-dot {
+  position: relative;
+  font-size: 35px;
+  float: right;
+  right: 5px;
+  bottom: 37px;
+  color: #c8e1f4;
+}
+
+.fa-location-dot:hover {
+  cursor: pointer;
+  color: #abcdf0;
+}
+
+.fa-location-dot:active {
+  cursor: pointer;
+  color: #c8e1f4;
 }
