@@ -29,14 +29,14 @@ li:first-letter {
   text-transform: capitalize;
 }
 
-small {
-  font-size: 10px;
-  color: #70757a;
-}
-
 a {
   text-decoration: none;
   color: #70757a;
+}
+small {
+  font-size: 10px;
+  color: #70757a;
+  margin: 8px auto;
 }
 
 .weather-app-wrapper {
