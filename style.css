@@ -30,23 +30,24 @@ li:first-letter {
 }
 
 small {
-  font-size: 12px;
+  font-size: 10px;
+  color: #70757a;
 }
 
 a {
   text-decoration: none;
-  color: #48484a;
+  color: #70757a;
 }
 
 .weather-app-wrapper {
   max-width: 600px;
-  margin: 30px auto;
+  margin: 0 auto;
 }
 
 .weather-app {
   border: 1px solid #fff;
   padding: 15px;
-  margin: 20px auto;
+  margin: 0 auto;
   border-radius: 8px;
   max-width: 600px;
   background: linear-gradient(to top, #c8e1f4 0%, white 100%);
