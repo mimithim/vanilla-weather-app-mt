@@ -109,10 +109,10 @@ small {
 }
 .fa-location-dot {
   position: relative;
-  font-size: 35px;
+  font-size: 30px;
   float: right;
-  right: 5px;
-  bottom: 37px;
+  right: 0;
+  bottom: 35px;
   color: #c8e1f4;
 }
 
